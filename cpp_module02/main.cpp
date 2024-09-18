@@ -6,9 +6,6 @@
 #include "TargetGenerator.hpp"
 #include "Fireball.hpp"
 
-
-
-
 int main()
 {
   Warlock richard("Richard", "foo");
@@ -29,5 +26,5 @@ int main()
 
   richard.introduce();
   richard.launchSpell("Polymorph", *wall);
-  // richard.launchSpell("Fireball", *wall);
+  richard.launchSpell("Fireball", *wall);
 }

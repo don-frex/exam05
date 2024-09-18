@@ -1,10 +1,12 @@
-#include "Dummy.hpp"
+#include "BrickWall.hpp"
 
-Dummy::Dummy(): ATarget("Target Practice Dummy") {}
+BrickWall::BrickWall(): ATarget("Inconspicuous Red-brick Wall")
+{}
 
-Dummy::~Dummy() {}
+BrickWall::~BrickWall(){}
 
-ATarget *Dummy::clone() const
+
+ATarget *BrickWall::clone() const
 {
-	return new Dummy();
+	return new BrickWall();
 }

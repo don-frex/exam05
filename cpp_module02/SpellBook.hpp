@@ -1,20 +1,19 @@
 #ifndef SPELLBOOK_HPP
 #define SPELLBOOK_HPP
 
-#include "ASpell.hpp"
 #include <map>
+#include "ASpell.hpp"
 
 class SpellBook
 {
-    private:
-        std::map<std::string, ASpell *> spell_arr;
-    public:
-        SpellBook();
-        ~SpellBook();
-        void learnSpell(ASpell*spell);
-        void forgetSpell(std::string const &spell_name);
-        ASpell* createSpell(std::string const &create_spell);
-
+	private:
+		std::map<std::string, ASpell *> arr_book;
+	public:
+		SpellBook();
+		~SpellBook();
+		void learnSpell(ASpell* spell);
+		void forgetSpell(std::string const &spell_name);
+		ASpell* createSpell(std::string const &spell_name);		
 };
 
 #endif

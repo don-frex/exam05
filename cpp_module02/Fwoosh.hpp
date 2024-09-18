@@ -2,14 +2,13 @@
 #define FWOOSH_HPP
 
 #include "ASpell.hpp"
-//#include ""
 
-class Fwoosh: public ASpell
+class Fwoosh : public ASpell
 {
 	public:
 		Fwoosh();
 		~Fwoosh();
-		virtual ASpell *clone() const;
+		ASpell *clone() const;
 };
 
 #endif
